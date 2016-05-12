@@ -11,7 +11,7 @@ if __name__ == '__main__':
     ACTION_TABLE = 'mars_tianchi_user_actions'
     SONG_TABLE = 'mars_tianchi_songs'
     
-    conn = sqlite3.connect('tianchiMusic.db')
+    conn = sqlite3.connect('../tianchiMusic.db')
     c = conn.cursor()
     
     c.execute('SELECT COUNT(*) FROM %s;' % ACTION_TABLE)

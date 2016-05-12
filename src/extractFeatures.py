@@ -8,12 +8,12 @@ Created on Mon May 09 19:26:29 2016
 import sqlite3
 from datetime import datetime
 from datetime import timedelta
-import numpy as np
 
 languageCodeBook = {0:0, 1:1, 2:2, 3:3, 4:4, 11:5, 12:6, 14:7, 100:8}
+dbPath = '../tianchiMusic.db'
 
 def createSongsDate(): 
-    conn = sqlite3.connect('tianchiMusic.db')
+    conn = sqlite3.connect(dbPath)
     c = conn.cursor()
     CREATE_STATEMENT = '''CREATE TABLE songs_date
                           (song_id TEXT,
@@ -56,7 +56,7 @@ def createSongsPartialFeature():
               7 weekdays action1, 7 weekdays action2, 7 weekdays action3]
     """   
     res = {}
-    conn = sqlite3.connect('tianchiMusic.db')
+    conn = sqlite3.connect(dbPath)
     c = conn.cursor()
     
     print 'SELECT song_id FROM filtered_songs;'
@@ -137,7 +137,7 @@ def runSqlScript(fileName):
     This method would be VERY SLOW.
     Recommend to run script in cmd using sqlite3.
     """
-    conn = sqlite3.connect('tianchiMusic.db')
+    conn = sqlite3.connect(dbPath)
     c = conn.cursor()
     with open(fileName) as f:
         c.executescript(f.read())

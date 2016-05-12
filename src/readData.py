@@ -6,9 +6,11 @@ Created on Wed May 11 22:00:08 2016
 """
 import sqlite3
 import numpy as np
+import time
+
 
 def readData():
-    conn = sqlite3.connect('tianchiMusic.db')
+    conn = sqlite3.connect('../tianchiMusic.db')
     c = conn.cursor()
     c.execute('select * from data;')
     X, Y = [], []
@@ -23,6 +25,9 @@ def readData():
     return np.array(X), np.array(Y)
     
 if __name__ == '__main__':
+    tic = time.time()
     X, Y = readData()
+    tac = time.time()
+    print 'time: ', tac - tic
     print X.shape
     print Y.shape
