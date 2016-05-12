@@ -1,0 +1,28 @@
+Total rows from mars_tianchi_user_actions:  5652232
+Total rows from mars_tianchi_songs:  10842
+Total songs from mars_tianchi_user_actions:  10278
+Total songs from mars_tianchi_songs:  10842
+Total users:  349946
+Artist counts of gender 1:  17
+Artist counts of gender 2:  22
+Artist counts of gender 3:  11
+Total artists:  50
+Song counts of language 0: 19
+Song counts of language 1: 1942
+Song counts of language 2: 3102
+Song counts of language 3: 775
+Song counts of language 4: 3029
+Song counts of language 11: 1500
+Song counts of language 12: 28
+Song counts of language 14: 10
+Song counts of language 100: 437
+Total languages:  9
+Average songs per artist:  216.84
+Average plays per song:  495.350833592
+Average downloads per song:  83.8504489627
+Average collects per song:  16.1872119816
+Average plays per user:  15.5602276978
+Average downloads per user:  4.70865717316
+Average collects per user:  2.05034475211
+Average init_plays per song:  24080.3599889
+Average song releases per day:  11.7592190889
